@@ -1,0 +1,89 @@
+*{
+    font-family: 'Segoe UI', Tahoma, Verdana, sans-serif;
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+}
+.header{
+    width: 100%;
+    background-color: rgb(6, 232, 6);
+    /* text-align: center; */
+    padding: 0.5% 1%;
+    /* color: rgb(255, 255, 255); */
+    color: #000;
+}
+.program_name{
+    font-size: 1.5rem;
+    font-weight: 700;
+    border: 1px solid black;
+    padding: 0.25% 0.5%;
+    display: inline-block;
+}
+body{
+    background: #000;
+}
+.digtal_clock {
+    margin: auto;
+    /* background: rgb(207, 206, 206); */
+    color: rgb(6, 232, 6);
+    text-align: center;
+    padding: 10%;
+}
+
+.clock {
+    font-size: 8rem;
+}
+
+.date {
+    font-size: 2rem;
+    font-weight: 300;
+}
+.quote{
+    
+    color: rgb(255, 255, 255);
+    font-size: 1rem;
+    text-align: center;
+}
+.footer{
+    position: fixed;
+    bottom: 0px;
+    width: 100%;
+    background-color: rgb(6, 232, 6);
+    text-align: center;
+    padding: 0.5% 0%;
+    
+}
+.link{
+    color: rgb(254, 254, 254);
+    text-align: center;
+    
+    /* margin: auto; */
+    text-decoration: none;
+}
+
+@media only screen and (max-width: 1100px) {
+    .digtal_clock {
+        margin-top: 10%;
+        padding: 10%;
+    }
+    .clock {
+        font-size: 5rem;
+    }
+    .date{
+        font-size: 2rem;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    
+    .digtal_clock {
+        margin-top: 30%;
+        padding: 10%;
+    }
+    .clock {
+        font-size: 2rem;
+    }
+    .date{
+        font-size: 1rem;
+    }
+}
