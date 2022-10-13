@@ -1,33 +1,38 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="./clockStyle.css">
-    <title>clock</title>
+    <title>Clock</title>
+    <link rel="icon" href="./clock-solid.svg">
 </head>
+
 <body>
     <div class="header">
-        <h1 class="program_name">Digital Clock</h1>
+        <h1 class="program_name">Clock</h1>
     </div>
-    <div class="digtal_clock">
+    <div class="navbar">
+        <ul>
+            <li onclick="switchClock('analog')" id="analogBtn">Analog </li>
+            <li onclick="switchClock('digital')" id="digitalBtn">Digital </li>
+        </ul>
+    </div>
+    <div class="analog_clock clock" id="analog">
+        <div id="hour"></div>
+        <div id="min"></div>
+        <div id="sec"></div>
+    </div>
+    <div class="digtal_clock clock" id="digital">
         <h1 id="clock" class="clock">clock</h1>
         <h3 id="date" class="date">date day</h3>
-
     </div>
-    <div class="quote">
-        <q>
-            <b>
-                The Past, the Future, O dear, is from you; you should regard both these as one.
-            </q>
-        </b><br>
-        <i>Rumi</i>
-    </div>
-    
     <div class="footer">
         <a href="https://m.facebook.com/grapners/" target="_blank" class="link">Grapners</a>
     </div>
     <script src="./clockApp.js"></script>
 </body>
+
 </html>
